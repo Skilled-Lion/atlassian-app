@@ -1,0 +1,45 @@
+{
+    "name": "Hello World",
+    "description": "Atlassian Connect app",
+    "key": "com.example.myappdd",
+    "baseUrl": "https://de39-122-171-21-68.ap.ngrok.io",
+    "vendor": {
+        "name": "kaushal singh",
+        "url": "https://de39-122-171-21-68.ap.ngrok.io"
+    },
+    "authentication": {
+        "type": "none"
+    },
+    "apiVersion": 1,
+    "modules": {
+        "generalPages": [
+            {
+                "url": "/helloworld.html",
+                "key": "hello-world",
+                "location": "system.top.navigation.bar",
+                "name": {
+                    "value": "Greeting"
+                }
+            }
+        ],
+        "jiraIssueFields": [
+           {
+             "description": {
+               "value": "field with team"
+             },
+             "type": "single_select",
+             "extractions": [
+               {
+                 "path": "category",
+                 "type": "text",
+                 "name": "categoryName"
+               }
+             ],
+             "name": {
+               "value": "Team"
+             },
+             "key": "team-field"
+           }
+         ]
+    }
+}
